@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "mysticism",
+  "version": "${version}",
+  "name": "mysticism",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mysticism/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "mysticism.mysticism.client.MysticismDataGenerator"
+    ],
+    "client": [
+      "mysticism.mysticism.client.MysticismClient"
+    ],
+    "main": [
+      "mysticism.mysticism.Mysticism"
+    ]
+  },
+  "mixins": [
+    "mysticism.mixins.json",
+    {
+      "config": "mysticism.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
