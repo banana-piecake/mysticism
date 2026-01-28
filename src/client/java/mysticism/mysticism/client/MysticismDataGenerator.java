@@ -10,4 +10,3 @@ public class MysticismDataGenerator implements DataGeneratorEntrypoint {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
     }
 }
-
