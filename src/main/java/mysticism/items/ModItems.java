@@ -19,7 +19,7 @@ public class ModItems {
     }
 
     public static final Item RUBY = registerItem("ruby", Item::new, new Item.Settings());
-    public static final Item DASHTEST = registerItem("dash_item_test", DashItem::new, new Item.Settings().useCooldown(3));
+    public static final Item WINDORB = registerItem("wind_orb", DashItem::new, new Item.Settings().useCooldown(3));
 
     public static void registerModItems() {
 

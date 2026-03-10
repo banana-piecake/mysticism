@@ -2,6 +2,7 @@ package mysticism.items;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.Vec3d;
@@ -18,6 +19,7 @@ public class DashItem extends Item {
         Vec3d dashVector;
         dashVector = movementVector.multiply(2.0);
         user.addVelocity(dashVector);
+        world.addParticleClient(ParticleTypes.GUST_EMITTER_LARGE, user.getX(), user.getY() + 1.0, user.getZ(), 0.0, 0.0, 0.0);
         return ActionResult.SUCCESS;
     }
 }
