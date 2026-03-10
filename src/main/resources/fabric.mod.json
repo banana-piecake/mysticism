@@ -11,13 +11,13 @@
   "environment": "*",
   "entrypoints": {
     "fabric-datagen": [
-      "mysticism.mysticism.client.MysticismDataGenerator"
+      "mysticism.client.MysticismDataGenerator"
     ],
     "client": [
-      "mysticism.mysticism.client.MysticismClient"
+      "mysticism.client.MysticismClient"
     ],
     "main": [
-      "mysticism.mysticism.Mysticism"
+      "mysticism.Mysticism"
     ]
   },
   "mixins": [

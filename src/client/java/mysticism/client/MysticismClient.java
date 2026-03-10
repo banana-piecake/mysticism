@@ -1,4 +1,4 @@
-package mysticism.mysticism.client;
+package mysticism.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
