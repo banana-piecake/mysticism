@@ -1,5 +1,6 @@
 package mysticism.items;
 
+import mysticism.CreeperTotemItem;
 import mysticism.Mysticism;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -20,6 +21,7 @@ public class ModItems {
 
     public static final Item RUBY = registerItem("ruby", Item::new, new Item.Settings());
     public static final Item WINDORB = registerItem("wind_orb", DashItem::new, new Item.Settings().useCooldown(3));
+    public static final Item CREEPERTOTEM = registerItem("creeper_totem", CreeperTotemItem::new, new Item.Settings().useCooldown(3));
 
     public static void registerModItems() {
 
