@@ -27,6 +27,7 @@ public class ModItems {
     public static final Item CREEPERTOTEM = registerItem("creeper_totem", CreeperTotemItem::new, new Item.Settings());
     public static final Item ENDORB = registerItem("mysterious_pearl", EnderItem::new, new Item.Settings().useCooldown(0.2f));
     public static final Item BAT = registerItem("bat", BatItem::new, new Item.Settings().sword(ToolMaterial.IRON,2.7f, -1.2f));
+    public static final Item FELIXAXE = registerItem("felix_axe", FelixAxeItem::new, new Item.Settings().sword(ToolMaterial.IRON,3.7f, -1f));
 
     public static void registerModItems() {
 
