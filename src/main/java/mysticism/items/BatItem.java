@@ -6,6 +6,7 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.particle.ParticleTypes;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
@@ -27,6 +28,7 @@ public class BatItem extends Item {
             target.setVelocity(target.getVelocity().x, 1.5, target.getVelocity().z);
             player.knockedBack = true;
             target.playSound( Mysticism.BAT, 2f, 1f);
+            //ServerWorld.spawnParticles(ParticleTypes.GUST_EMITTER_LARGE, target.getX(), target.getY() + 1.0, target.getZ(), 0.0, 0.0, 0.0);
         }
     }
 }

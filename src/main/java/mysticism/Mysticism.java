@@ -17,6 +17,8 @@ public class Mysticism implements ModInitializer {
             Identifier id = Identifier.of(Mysticism.MOD_ID, name);
             return Registry.register(Registries.SOUND_EVENT, id, SoundEvent.of(id));
 }
+
+
     @Override
     public void onInitialize() {
         ModItems.registerModItems();
