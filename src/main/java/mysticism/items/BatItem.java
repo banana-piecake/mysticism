@@ -18,10 +18,11 @@ public class BatItem extends Item {
 
     public void postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (attacker instanceof PlayerEntity player) {
-            Vec3d dashVector = attacker.getRotationVector().multiply(-0.5);
+            Vec3d dashVector = attacker.getRotationVector().multiply(2);
 
-            player.addVelocity(dashVector.x, dashVector.y, dashVector.z);
-
+            target .addVelocity(dashVector.x, 2, dashVector.z);
+            target.setVelocity(target.getVelocity().x, 1.5, target.getVelocity().z);
+            player.knockedBack = true;
         }
     }
 }
