@@ -1,0 +1,10 @@
+{
+  "bat": {
+    "subtitle": "sound.mysticism.bat",
+    "sounds": ["mysticism:bat"]
+  },
+  "engine": {
+    "subtitle": "sound.mysticism.engine",
+    "sounds": ["mysticism:engine"]
+  }
+}
