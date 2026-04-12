@@ -37,6 +37,13 @@ public class ThunderItem extends Item {
 
         LightningEntity lightning = EntityType.LIGHTNING_BOLT.create(world, SpawnReason.EVENT);
         for (Entity entity : nearbyEntities) {
+            lightning.refreshPositionAndAngles(
+                    user.getX(),
+                    user.getY(),
+                    user.getZ(),
+                    user.getYaw(),
+                    user.getPitch()
+            );
             world.spawnEntity(lightning);
         }
         return ActionResult.SUCCESS;
