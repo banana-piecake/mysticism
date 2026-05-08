@@ -1,8 +1,8 @@
 {
-  "item.mysticism:thunder_orb": "Thundorb™",
-  "item.mysticism:bat": "Heaviest Bat",
-  "item.mysticism:creeper_totem": "Creeper Totem",
-  "item.mysticism:mysterious_pearl": "Enigmatic Pearl",
-  "item.mysticism:ruby": "Ruby",
-  "item.mysticism:wind_orb": "Essence of Dash."
+  "item.mysticism.thunder_orb": "Thundorb™",
+  "item.mysticism.bat": "Heaviest Bat",
+  "item.mysticism.creeper_totem": "Creeper Totem",
+  "item.mysticism.mysterious_pearl": "Enigmatic Pearl",
+  "item.mysticism.ruby": "Ruby",
+  "item.mysticism.wind_orb": "Essence of Dash."
 }
