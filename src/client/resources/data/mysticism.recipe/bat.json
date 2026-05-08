@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "mysticism:ruby",
+    "Y": "minecraft:iron_ingot"
+  },
+  "pattern": [
+    " Y ",
+    "YXY",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysticism:bat"
+  }
+}

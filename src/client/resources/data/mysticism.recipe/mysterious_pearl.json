@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "mysticism:ruby",
+    "Y": "minecraft:ender_pearl"
+  },
+  "pattern": [
+    " Y ",
+    "YXY",
+    " Y "
+  ],
+  "result": {
+    "count": 1,
+    "id": "mysticism:mysterious_pearl"
+  }
+}
