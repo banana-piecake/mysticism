@@ -2,9 +2,12 @@ package mysticism.items;
 
 import mysticism.CreeperTotemItem;
 import mysticism.Mysticism;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.component.DataComponentTypes;
 import net.minecraft.component.type.DeathProtectionComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.registry.RegistryKey;
@@ -29,7 +32,16 @@ public class ModItems {
     public static final Item BAT = registerItem("bat", BatItem::new, new Item.Settings().sword(ToolMaterial.IRON,2.7f, -1.2f));
     public static final Item FELIXAXE = registerItem("felix_axe", FelixAxeItem::new, new Item.Settings().sword(ToolMaterial.IRON,3.7f, -1f));
 
-    public static void registerModItems() {
 
+        private static void customIngredients(FabricItemGroupEntries entries) {
+            entries.add(RUBY);
+            entries.add(WINDORB);
+            entries.add(THUNDERORB);
+            entries.add(ENDORB);
+            entries.add(BAT);
+        }
+
+        public static void registerModItems() {
+            ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::customIngredients);
     }
 }
